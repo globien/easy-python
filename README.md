@@ -15,7 +15,7 @@
 
 代码文件与描述文件是一一对应的，建议先阅读描述文件。
 
-无需安装编程平台，建议把代码Copy到[菜鸟模拟平台](https://www.runoob.com/try/runcode.php?filename=HelloWorld&type=python3?blank)直接运行。
+无需安装编程平台，建议把代码Copy到[菜鸟模拟平台](https://www.runoob.com/try/runcode.php?filename=HelloWorld&type=python3?_blank)直接运行。
 
 #### 参与贡献
 

@@ -15,9 +15,11 @@
 
 代码文件与描述文件是一一对应的，建议先阅读描述文件。
 
-无需安装编程平台，建议把代码Copy到菜鸟模拟平台直接运行: 
+无需安装编程平台，建议把代码Copy到在线编程平台直接运行，例如: 
 
-https://www.runoob.com/try/runcode.php?filename=HelloWorld&type=python3
+* https://www.programiz.com/python-programming/online-compiler/
+
+* https://www.runoob.com/try/runcode.php?filename=HelloWorld&type=python3
 
 #### 参与贡献
 

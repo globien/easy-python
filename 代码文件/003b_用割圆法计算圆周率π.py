@@ -13,5 +13,5 @@ a=1
 print(n,"     ",n*a/2)
 for i in range(100) :
   n=2*n
-  a=math.sqrt(2-2*sqrt(1-(a/2)**2))
+  a=math.sqrt(2-2*math.sqrt(1-(a/2)**2))
   print(n,"     ",n*a/2)

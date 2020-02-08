@@ -17,13 +17,10 @@
 
 无需安装编程平台，建议把代码Copy到在线编程平台直接运行，例如: 
 
-* [Programiz](https://www.programiz.com/python-programming/online-compiler){:target="_blank"} （推荐首选）
+* https://www.programiz.com/python-programming/online-compiler  （首选推荐）
 
-* <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">https://www.programiz.com/python-programming/online-compiler/</a>
+* https://www.runoob.com/try/runcode.php?filename=HelloWorld&type=python3
 
-* <https://www.runoob.com/try/runcode.php?filename=HelloWorld&type=python3>{:target="_blank"}
-
-* <a href="http://write.blog.csdn.net/postlist" target="_blank">跳到自己博客列表</a>
 
 #### 参与贡献
 

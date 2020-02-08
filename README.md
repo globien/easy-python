@@ -19,6 +19,8 @@
 
 * https://www.programiz.com/python-programming/online-compiler/ （推荐首选）
 
+* <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">https://www.programiz.com/python-programming/online-compiler/</a>
+
 * https://www.runoob.com/try/runcode.php?filename=HelloWorld&type=python3
 
 * <http://example.com/>

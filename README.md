@@ -23,7 +23,7 @@
 
 * <https://www.runoob.com/try/runcode.php?filename=HelloWorld&type=python3>{:target="_blank"}
 
-* <http://example.com/>
+* <a href="http://write.blog.csdn.net/postlist" target="_blank">跳到自己博客列表</a>
 
 #### 参与贡献
 

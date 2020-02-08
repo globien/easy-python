@@ -17,11 +17,11 @@
 
 无需安装编程平台，建议把代码Copy到在线编程平台直接运行，例如: 
 
-* https://www.programiz.com/python-programming/online-compiler/ （推荐首选）
+* [Programiz](https://www.programiz.com/python-programming/online-compiler){:target="_blank"} （推荐首选）
 
 * <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">https://www.programiz.com/python-programming/online-compiler/</a>
 
-* https://www.runoob.com/try/runcode.php?filename=HelloWorld&type=python3
+* <https://www.runoob.com/try/runcode.php?filename=HelloWorld&type=python3>{:target="_blank"}
 
 * <http://example.com/>
 

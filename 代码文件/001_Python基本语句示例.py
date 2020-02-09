@@ -4,13 +4,13 @@
 print("Hello World!")       
 print(3+4)
 print("5 除以 3 等于", 5/3)
-print()
+print()                               #打印一个空行
 
 x = 4
 y = 3
 print("x * y =", x*y)
 a = x**y
-print(x, "的", y, "次方等于 ", a)
+print(x, "的", y, "次方等于", a)
 print()
 
 name = "小强"

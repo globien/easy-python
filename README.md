@@ -18,7 +18,6 @@
 无需安装编程平台，建议把代码Copy到在线编程平台直接运行，例如: 
 
 * https://www.programiz.com/python-programming/online-compiler  （首选推荐）
-
 * https://www.runoob.com/try/runcode.php?filename=HelloWorld&type=python3
 
 

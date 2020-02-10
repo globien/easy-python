@@ -6,13 +6,13 @@ print("Hello World!")
 print(2+3)
 print("2 + 3 =", 2+3)
 
-x = 4
-y = 3
-a = x+y
-b = x-y
-c = x*y
-d = x/y
-e = x**y
+x = 3
+y = 4
+a = x + y
+b = x - y
+c = x * y
+d = x / y
+e = x ** y
 print("a =", a)
 print("b =", b)
 print("c =", c)

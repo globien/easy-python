@@ -61,5 +61,5 @@ x * y = 12
 
 本文对应的代码文件为：[001_Python基本语句示例.py](../代码文件/001_Python基本语句示例.py)
 
-如果你想亲手运行一下试试，但还没有安装Python运行环境的话，也没关系，直接把代码拷贝到这里就可以运行了： https://www.programiz.com/python-programming/online-compiler 。（在这种Web平台上运行还有个好处：不会死机！顶多卡死浏览器。）
+> 如果你想亲手运行一下试试，但还没有安装Python运行环境的话，也没关系，直接把代码拷贝到这里就可以运行了： https://www.programiz.com/python-programming/online-compiler 。（在这种Web平台上运行还有个好处：不会死机！顶多卡死浏览器。）
 

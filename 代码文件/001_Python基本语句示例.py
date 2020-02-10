@@ -4,14 +4,20 @@
 
 print("Hello World!")       
 print(2+3)
-print("5 + 3 =", 5/3)
+print("2 + 3 =", 2+3)
 
 x = 4
 y = 3
-a = x*y
-b = x**y
+a = x+y
+b = x-y
+c = x*y
+d = x/y
+e = x**y
 print("a =", a)
 print("b =", b)
+print("c =", c)
+print("d =", d)
+print("e =", e)
 
 first_name = "Harry"
 last_name = "Potter"

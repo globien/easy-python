@@ -1,3 +1,4 @@
+#https://github.com/globien/easy_python/blob/master/描述文件/001_Python易懂不用学.md
 #Python编程的基本语句示例
 #下面的引号用单引号双引号均可，但要成对使用，且注意不要用中文引号
 

@@ -32,7 +32,6 @@ print("Hello World!")
 print("Hello World!")       
 print(2+3)
 print("2 + 3 =", 2+3)
-
 x = 3
 y = 4
 a = x - y
@@ -41,8 +40,6 @@ c = x / y
 print("a =", a)
 print("b =", b)
 print("c =", c)
-
-
 first_name = "Harry"
 last_name = "Potter"
 print("Hi", first_name, last_name, "!")

@@ -35,16 +35,13 @@ print("2 + 3 =", 2+3)
 
 x = 3
 y = 4
-a = x + y
-b = x - y
-c = x * y
-d = x / y
-e = x ** y
+a = x - y
+b = x * y
+c = x / y
 print("a =", a)
 print("b =", b)
 print("c =", c)
-print("d =", d)
-print("e =", e)
+
 
 first_name = "Harry"
 last_name = "Potter"
@@ -55,11 +52,9 @@ print("Hi", first_name, last_name, "!")
 Hello World!
 5
 2 + 3 = 5
-a = 7
-b = -1
-c = 12
-d = 0.75
-e = 81
+a = -1
+b = 12
+c = 0.75
 Hi Harry Potter !
 ```
 可能唯一要注意的是：上述代码中所有的引号，用单引号双引号都可以，但要保证成对使用，并且千万不要用中文的全角引号。另外#表示注释，是给自己或别人提示的，运行时自动被忽略。

@@ -31,14 +31,20 @@ print("Hello World!")
 ```
 print("Hello World!")       
 print(2+3)
-print("5 + 3 =", 5/3)
+print("2 + 3 =", 2+3)
 
-x = 4
-y = 3
-a = x*y
-b = x**y
+x = 3
+y = 4
+a = x + y
+b = x - y
+c = x * y
+d = x / y
+e = x ** y
 print("a =", a)
 print("b =", b)
+print("c =", c)
+print("d =", d)
+print("e =", e)
 
 first_name = "Harry"
 last_name = "Potter"
@@ -47,10 +53,13 @@ print("Hi", first_name, last_name, "!")
 运行结果如下，相信效果都是你想象的那样自然：
 ```
 Hello World!
-7
-5 + 3 = 1.6666666666666667
-a = 12
-b = 64
+5
+2 + 3 = 5
+a = 7
+b = -1
+c = 12
+d = 0.75
+e = 81
 Hi Harry Potter !
 ```
 可能唯一要注意的是：上述代码中所有的引号，用单引号双引号都可以，但要保证成对使用，并且千万不要用中文的全角引号。另外#表示注释，是给自己或别人提示的，运行时自动被忽略。

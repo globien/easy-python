@@ -11,7 +11,7 @@ int main()
     return 0;
 }
 ```
-而用另外一种当下也非常流行的语言——Java——编程是长这样子的：
+而用另外一种当下也非常流行的语言Java来编程则是长这样子的：
 ```
 public class HelloWorld {
     public static void main(String[] args) {

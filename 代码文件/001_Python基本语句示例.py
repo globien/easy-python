@@ -14,9 +14,8 @@ print("a =", a)
 print("b =", b)
 print("c =", c)
 
-
 first_name = "Harry"
 last_name = "Potter"
 print("Hi", first_name, last_name, "!")
 
-# 说明文件：https://github.com/globien/easy_python/blob/master/描述文件/001_Python不用学.md
+# 详述文件：https://github.com/globien/easy_python/blob/master/描述文件/001_Python不用学.md

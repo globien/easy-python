@@ -42,9 +42,8 @@ print("a =", a)
 print("b =", b)
 print("c =", c)
 
-first_name = "Harry"
-last_name = "Potter"
-print("Hi", first_name, last_name, "!")
+姓名 = "张三"
+print("你好", 姓名, "！")
 ```
 运行结果如下，相信效果都是你想象的那样自然：
 ```
@@ -62,6 +61,6 @@ Hi Harry Potter !
 
 还有一点很重要，很多Python教程第一课就是教你如何安装Python，因为安装Python还是有点儿麻烦的。其实，初学者并不需要安装Python运行环境，你把代码直接拷贝到这个网站就可以在线运行和调试了： https://www.programiz.com/python-programming/online-compiler 。（这是作者找到的目前最好用的免费平台；如果不能用了，请查看本栏目主页Readme中推荐的其它平台。）
 
-本文对应的代码文件为：[001_Python基本语句示例.py](../代码文件/001_Python基本语句示例.py)
+本文对应的代码文件为：[001_Python基本语句示例.py](../代码文件/101_Python基本语句示例.py)
 
 这里是《简单又有趣的Python》栏目，我们的口号是“Python不用学，用用你就会”。欢迎关注！

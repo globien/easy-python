@@ -9,12 +9,13 @@ counter2 = 0        # 统计出现连续正面后，再一次出现正面的次�
 
 for i in range(EXP_NUM):
     counter3 = 0                        # 用来统计是否连续正面
-    for i in range(N):
+    for j in range(N):
         coin = random.randint(0,1)
         counter3 = counter3 + coin      # 累计出现正面的次数
     if counter3 == N:                   # 表明连续出现了N次正面
         counter1 = counter1 + 1
-        counter2 = counter2 + random.randint(0,1)
+        counter2 = counter2 + random.randint(0,1)  # 再扔一次
+
 print("连续出现N次正面的总次数", counter1)
 print("连续出现N次正面后，再次出现正面的次数", counter2)
 print("连续出现N次正面后，再次出现正面的比例", counter2/counter1)

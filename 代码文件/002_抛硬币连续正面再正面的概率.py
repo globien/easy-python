@@ -19,3 +19,5 @@ for i in range(EXP_NUM):
 print("连续出现N次正面的总次数", counter1)
 print("连续出现N次正面后，再次出现正面的次数", counter2)
 print("连续出现N次正面后，再次出现正面的比例", counter2/counter1)
+
+# 详述文件：https://github.com/globien/easy_python/blob/master/描述文件/002_抛硬币连续正面再正面的概率.md

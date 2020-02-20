@@ -16,6 +16,7 @@ for i in range(试验次数):               # 换的实验
     door_list = ["A","B","C"]           # 三扇门的编号
     car = random.choice(door_list)      # 汽车随机放在某扇门后
     bet = random.choice(door_list)      # 挑战者随机选择一扇门        
+   
     # 现在主持人随机选择一扇门予以排除
     # 这扇门不是挑战者选择的门，也不是汽车所在的门
     host_list = ["A","B","C"]

@@ -1,3 +1,5 @@
+# 用蒙特卡洛法计算圆周率，即，往一个正方形里扔豆子，计算有多少比例的豆子扔在了该正方形的内切圆中
+
 import random
 
 num_all = 0         #随机点总计数器
@@ -18,3 +20,6 @@ while 1 :
         num_all = num_all + 1       #总计数器+1
     pi = 4*num_cir/num_all
     print(num_all,"   ", pi)
+
+    
+# 详述文件：https://github.com/globien/easy_python/blob/master/描述文件/106_如何计算圆周率π.md    

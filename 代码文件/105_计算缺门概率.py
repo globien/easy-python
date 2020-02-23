@@ -1,3 +1,6 @@
+# 计算52张扑克牌发牌后，一手牌至少缺一门的概率有多大
+# 假定牌的编号1~13为黑桃，14~26为红桃，27~39为方块，40~52为梅花
+
 import random
 EXP = 100000                                    # 实验次数
 DEAL = 13                                       # 发牌张数
@@ -23,3 +26,5 @@ for i in range(EXP):
         if full == 4: break                     # 四门花色都不缺，无需继续发牌
     if full < 4 : void += 1                     # 发完牌，如果有缺门，计数器+1
 print ("P(void) = %0.1f" %(void/EXP*100),"%")
+
+# 详述文件：https://github.com/globien/easy_python/blob/master/描述文件/105_计算扑克牌缺门概率.md

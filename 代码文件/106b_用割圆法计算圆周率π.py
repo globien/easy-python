@@ -12,3 +12,6 @@ for i in range(14) :
   n=2*n
   a=math.sqrt(2-2*math.sqrt(1-(a/2)**2))
   print("%-20d%-20.12f" % (n, n*a/2))
+  
+
+  # 详述文件：https://github.com/globien/easy_python/blob/master/描述文件/106_如何计算圆周率π.md  

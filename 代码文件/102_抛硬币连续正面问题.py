@@ -12,9 +12,9 @@ counter3 = 0        # 统计出现连续N次正面后，再一次出现正面的
 for i in range(EXP_NUM):
     coin = random.randint(0,1)
     if coin == 1:                       # 扔到了一次正面
-        counter1 = counter1 + 1         # 累计出现正面的次数          
+        counter1 = counter1 + 1         # 累计出现正面的次数
     else:
-        counter1 = 0                    # 不是正面，重置计数器        
+        counter1 = 0                    # 不是正面，重置计数器
     
     if counter1 == N:                   # 表明连续出现了N次正面
         counter2 = counter2 + 1         # 累计出现N次正面的次数

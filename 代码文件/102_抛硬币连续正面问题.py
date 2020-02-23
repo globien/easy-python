@@ -7,7 +7,7 @@ EXP_NUM = 150000    # 总的抛硬币次数
 
 counter1 = 0        # 用来统计已经连续几次正面了
 counter2 = 0        # 统计共多少次出现连续N次正面
-counter3 = 0        # 统计出现连续N次正面后，再一次出现正面的次数
+counter3 = 0        # 统计出现连续N次正面后再次出现正面的次数
 
 for i in range(EXP_NUM):
     coin = random.randint(0,1)

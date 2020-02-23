@@ -16,3 +16,6 @@ for i in range(3, n, 2):                     #循环初值=3，末值n,步长=2
 pai = s*4                                    #求出π
 pai //= 10**10                               #舍掉后十位
 print(pai)                                   #输出圆周率π的值，不带小数点
+
+
+# 详述文件：https://github.com/globien/easy_python/blob/master/描述文件/106_如何计算圆周率π.md  

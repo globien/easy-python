@@ -1,0 +1,27 @@
+def is_prime(number):
+    if number % 2 == 0:
+        return False
+    else:
+        return True
+
+N = 10                  # 连续验算N个偶数是否满足哥德巴赫猜想
+while 1:
+    first = int(input("请输入起始偶数："))
+    if first % 2 == 0:
+        break
+    else:
+        print("你输入的不是偶数!")
+for i in range(10):
+    flag = False
+    even_num = first + 2*i
+    half = int(even_num/2)
+    for j in range(half-1):
+        number1 = half - j
+        number2 = half + j
+        if is_prime(number1) and is_prime(number2):
+            print(even_num, "=", number1, "+", number2)
+            flag = True
+            break
+    if flag == False:
+        print(even_num, "is not '1+1' !!!!!!")
+        

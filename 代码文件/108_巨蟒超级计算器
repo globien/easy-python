@@ -1,5 +1,5 @@
-# 巨蟒超级计算器
-# 可以做非常大的整数运算，例如计算10000的阶乘毫无压力，如果你真的需要这样做的话
+# 巨蟒超级计算器 (version 1.0 beta)
+# 可以做超级大的整数运算，例如计算10000的阶乘毫无压力，如果你真的需要这样做的话
 
 from math import *
 
@@ -13,7 +13,7 @@ def print_prompt():
     print("- 要退出程序请输入q或quit")
     print()
 
-print("Python巨蟒超级计算器 version 1.0 Beta\n")
+print("Python巨蟒超级计算器 version 1.0 beta\n")
 print_prompt()
 
 while 1:

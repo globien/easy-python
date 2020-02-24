@@ -24,4 +24,4 @@ for i in range(EXP_NUM):
 print("实验值 =", counter/EXP_NUM)
 
 
-# 详述文件：
+# 详述文件：https://github.com/globien/easy_python/blob/master/描述文件/107_生日相同的概率问题.md

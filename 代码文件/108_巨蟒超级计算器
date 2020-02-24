@@ -1,0 +1,32 @@
+# 巨蟒超级计算器
+
+from math import *
+
+def print_prompt():
+    print("- 可使用 + - * / 以及 %（模除）和 //（整除）等符号")
+    print("- 可使用小括号表示计算优先级，并且可以嵌套使用")
+    print("- 乘方可用**或pow(x,y)表示，如3**2表示3的平方")
+    print("- 开平方可用sqrt(x)函数，如sqrt(3)表示3的平方根")
+    print("- 可以使用三角函数及符号pi，如sin(pi)表示求sinπ")
+    print("- 阶乘使用factorial(x)，如factorial(3)表示3的阶乘")
+    print("- 要退出程序请输入q或quit")
+    print()
+
+print("Python巨蟒超级计算器 version 1.0 Beta\n")
+print_prompt()
+
+while 1:
+    exp = input("请输入算式:\n")
+    if exp[0] == "q" or exp[0] == "Q":
+        print("程序已根据您的要求退出。")
+        break
+    try:
+        x = eval(exp)
+    except:
+        print("算式有错，请仔细检查。")
+        print_prompt()
+    else:
+        print(exp, "=", x)
+        print()
+
+

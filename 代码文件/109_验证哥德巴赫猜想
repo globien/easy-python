@@ -4,11 +4,11 @@
 from math import *
 
 # 用试除法判断一个整数是否为素数
-# 试除法因子不需超过目标的平方根
+# 试除法所需验证的因子不需超过目标整数的平方根
 def is_prime(number): 
-    if number % 2 == 0:
+    if number % 2 == 0:         # 偶数显然不是素数
         return False
-    M = int(sqrt(number)) + 2    # 因子上限，+2可确保不会漏过 
+    M = int(sqrt(number)) + 2   # 因子上限，+2确保不会有遗漏 
     for i in range(3, M, 2):  
         if number % i == 0:
             return False

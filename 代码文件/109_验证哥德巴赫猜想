@@ -16,11 +16,11 @@ def is_prime(number):
 
 # 输入想验证的起始偶数
 while 1:
-    first = int(input("请输入起始偶数："))
-    if first % 2 == 0:
+    first = int(input("请输入一个大于等于6的偶数："))
+    if first % 2 == 0 and first >= 6 :
         break
     else:
-        print("你输入的不是偶数!")
+        print("你的输入有误，请重新输入。\n")
 
 # 连续验算N个偶数        
 N = 10                  

@@ -1,18 +1,30 @@
-def is_prime(number):
+# 暴力验证哥德巴赫猜想：任何一个大偶数都可以表示为两个素数之和
+# 普通家用计算机上大约可以验证到10000000000000（13个零）的大偶数
+
+from math import *
+
+# 用试除法判断一个整数是否为素数
+# 试除法因子不需超过目标的平方根
+def is_prime(number): 
     if number % 2 == 0:
         return False
-    else:
-        return True
+    M = int(sqrt(number)) + 2    # 因子上限，+2可确保不会漏过 
+    for i in range(3, M, 2):  
+        if number % i == 0:
+            return False
+    return True
 
-N = 10                  # 连续验算N个偶数是否满足哥德巴赫猜想
+# 输入想验证的起始偶数
 while 1:
     first = int(input("请输入起始偶数："))
     if first % 2 == 0:
         break
     else:
         print("你输入的不是偶数!")
-for i in range(10):
-    flag = False
+
+# 连续验算N个偶数        
+N = 10                  
+for i in range(N):
     even_num = first + 2*i
     half = int(even_num/2)
     for j in range(half-1):
@@ -20,8 +32,8 @@ for i in range(10):
         number2 = half + j
         if is_prime(number1) and is_prime(number2):
             print(even_num, "=", number1, "+", number2)
-            flag = True
             break
-    if flag == False:
-        print(even_num, "is not '1+1' !!!!!!")
+    if number1 < 3 :
+        print(even_num, "不符合'1+1'哥德巴赫猜想!!!!!!")
         
+    

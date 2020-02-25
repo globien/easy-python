@@ -34,6 +34,6 @@ for i in range(N):
             print(even_num, "=", number1, "+", number2)
             break
     if number1 < 3 :
-        print(even_num, "不符合'1+1'哥德巴赫猜想!!!!!!")
+        print(even_num, "：没找到'1+1'结构，不符合哥德巴赫猜想！！！")
         
     

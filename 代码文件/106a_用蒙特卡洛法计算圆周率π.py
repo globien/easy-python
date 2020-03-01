@@ -22,4 +22,4 @@ while 1 :
     print(num_all,"   ", pi)
 
     
-# 详述文件：https://github.com/globien/easy_python/blob/master/描述文件/106_如何计算圆周率π.md    
+# 详述文件：https://github.com/globien/easy-python/blob/master/描述文件/106_如何计算圆周率π.md    

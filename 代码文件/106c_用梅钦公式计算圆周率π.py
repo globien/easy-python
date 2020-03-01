@@ -18,4 +18,4 @@ pai //= 10**10                               #舍掉后十位
 print(pai)                                   #输出圆周率π的值，不带小数点
 
 
-# 详述文件：https://github.com/globien/easy_python/blob/master/描述文件/106_如何计算圆周率π.md  
+# 详述文件：https://github.com/globien/easy-python/blob/master/描述文件/106_如何计算圆周率π.md  

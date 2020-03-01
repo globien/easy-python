@@ -27,4 +27,4 @@ for i in range(EXP):
     if full < 4 : void += 1                     # 发完牌，如果有缺门，计数器+1
 print ("P(void) = %0.1f" %(void/EXP*100),"%")
 
-# 详述文件：https://github.com/globien/easy_python/blob/master/描述文件/105_计算扑克牌缺门概率.md
+# 详述文件：https://github.com/globien/easy-python/blob/master/描述文件/105_计算扑克牌缺门概率.md

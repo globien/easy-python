@@ -14,4 +14,4 @@ for i in range(14) :
   print("%-20d%-20.12f" % (n, n*a/2))
   
 
-# 详述文件：https://github.com/globien/easy_python/blob/master/描述文件/106_如何计算圆周率π.md  
+# 详述文件：https://github.com/globien/easy-python/blob/master/描述文件/106_如何计算圆周率π.md  

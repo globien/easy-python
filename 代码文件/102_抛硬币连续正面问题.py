@@ -27,4 +27,4 @@ print("连续出现N次正面的总次数", counter2)
 print("连续出现N次正面后，再次出现正面的次数", counter3)
 print("连续出现N次正面后，再次出现正面的比例", counter3/counter2)
 
-# 详述文件：https://github.com/globien/easy_python/blob/master/描述文件/102_抛硬币连续正面问题.md
+# 详述文件：https://github.com/globien/easy-python/blob/master/描述文件/102_抛硬币连续正面问题.md

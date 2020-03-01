@@ -17,4 +17,4 @@ print("c =", c)
 姓名 = "张三"
 print("你好", 姓名, "！")
 
-# 详述文件：https://github.com/globien/easy_python/blob/master/描述文件/101_Python不用学.md
+# 详述文件：https://github.com/globien/easy-python/blob/master/描述文件/101_Python不用学.md

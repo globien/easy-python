@@ -17,4 +17,4 @@ random.shuffle(list1)
 print("Shuffle directly by random.shuffle function:\n",list1)
 '''
 
-# 详述文件: https://github.com/globien/easy_python/blob/master/描述文件/104_如何高效而完美地洗牌.md
+# 详述文件: https://github.com/globien/easy-python/blob/master/描述文件/104_如何高效而完美地洗牌.md

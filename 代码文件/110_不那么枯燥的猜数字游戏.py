@@ -11,7 +11,7 @@ level_list = [very_sad, sad, so_so, happy, very_happy]
 
 level = random.randint(0,4)
 emotion = level * 20 + random.randint(1,20)
-print(level, level_list[level], emotion)
+print(level_list[level])
 
 guess = int(input("请输入1~100的数字："))
 n = 1                       # 已经猜的次数
@@ -23,6 +23,5 @@ while guess != emotion:
     else: print("猜得小了一点，继续！")
     guess = int(input("请重新输入你的猜测："))
     n = n + 1
-
 if n < 5: print("恭喜你", n, "次就猜对了！智商杠杠的！")
 else: print("恭喜你终于猜对了，你猜了", n, "次。")

@@ -32,3 +32,4 @@ while 1:
         print()
 
 
+# 详述文件：https://github.com/globien/easy-python/blob/master/描述文件/108_巨蟒超级计算器.md

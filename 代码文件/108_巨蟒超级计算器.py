@@ -3,6 +3,7 @@
 
 from math import *
 
+# 自定义函数，打印提示信息，主程序将在启动和用户输入出错时调用
 def print_prompt():
     print("- 可使用 + - * / 及 %(模除) 和 //(整除)等符号")
     print("- 可使用小括号表示计算优先级，并且可以嵌套使用")
@@ -14,21 +15,21 @@ def print_prompt():
     print("- 要退出程序请输入q或quit")
     print()
 
+#主程序从这里开始
 print("Python巨蟒超级计算器 version 1.0 beta\n")
 print_prompt()
-
-while 1:
+while 1:                    # 反复运行直到用户明确指示退出
     exp = input("请输入算式:\n")
     if exp[0] == "q" or exp[0] == "Q":
         print("程序已根据您的要求退出。")
         break
     try:
-        x = eval(exp)
+        x = eval(exp)       # eval()函数把字符串转换为表达式
     except:
         print("算式有错，请仔细检查。")
         print_prompt()
     else:
-        print(exp, "=", x)
+        print("=", x)
         print()
 
 

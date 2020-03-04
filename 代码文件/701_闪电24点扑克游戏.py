@@ -9,18 +9,23 @@ def find_solution(cards, signs):
         for j in range(24):
             exp_list = [cards[i][0], signs[j][0], cards[i][1], signs[j][1], cards[i][2], signs[j][2], cards[i][3] ]
             exp = "".join(exp_list)       # 把列表合并为字符串
-            print(exp)
+            print(i, j, exp)
             if abs(eval(exp)-24) < 0.000001 :
                 print("Found a solution: ", exp)
-                return
+                return 1
             else:
-                for i in range(6):
-                    exp_list_pare = add_pare(exp_list,6)
+                # exp_list = ["8","/","3","-","8","/","3"]
+                for k in range(6):
+                    exp_list_pare = add_pare(exp_list,k)
                     exp_pare = "".join(exp_list_pare)
-                    print(exp_pare)
-                    if abs(eval(exp_pare)-24) < 0.000001:
+                    # print(exp_pare)
+                    try: result = eval(exp_pare)    
+                    except ZeroDivisionError: continue      
+                    if abs(result-24) < 0.000001:
                         print("Found a solution: ", exp_pare)
-                        return
+                        return 1
+
+    return 0
 
 # 定义给表达式加括号的子程序
 def add_pare(exp_list, n):
@@ -56,9 +61,10 @@ def add_pare(exp_list, n):
 cards_all = [i for i in range(1,11) for j in range(16 if i==1 else 4)]
 shuffle(cards_all)                                  # 洗牌
 cards_four = [str(cards_all[i]) for i in range(4)]  # 发四张牌
-# cards_four = ["3", "8", "4", "5"]
+cards_four = ["8", "8", "3", "3"]
 print(cards_four)
 cards = list(permutations(cards_four,4))
 signs = list(permutations(["+","-","*","/"],3))
 
-find_solution(cards, signs)
+if find_solution(cards, signs) == 0:
+    print("There is no solution.")

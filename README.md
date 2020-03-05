@@ -20,9 +20,9 @@
 * https://www.programiz.com/python-programming/online-compiler  （首选推荐）
 * https://www.runoob.com/try/runcode.php?filename=HelloWorld&type=python3
 
-如果你使用自己电脑上安装的IDE，请务必保证Python版本为3.7版以上；如果不支持中文，请在第一行加上这句话：
+如果你使用自己电脑上安装的IDE，请务必保证Python版本为3.7版以上；如果不支持中文，请在文件开头加上这句话：
 
-
+`# coding = utf-8`
 
 #### 参与贡献
 

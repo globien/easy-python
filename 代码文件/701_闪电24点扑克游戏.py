@@ -16,7 +16,7 @@ def find_solution(cards, opers):
                 print()
                 return 1
             else:                           # 加括号尝试
-                for k in range(6):          # 6种加括号的方法
+                for k in range(6):          # 有6种加括号的方法
                     seq_pare = add_pare(seq,k)   # 调加括号函数
                     exp_pare = "".join(seq_pare) # 序列转换为串
                     try: 

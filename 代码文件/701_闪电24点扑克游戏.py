@@ -4,22 +4,19 @@ from random import *                        # 导入随机函数
 from itertools import *                     # 导入概率统计函数
 
 # 定义计算24点的子程序
-def find_solution(cards, signs):
-    for i in range(24):
-        for j in range(64):
-            exp_list = [cards[i][0], signs[j][0], cards[i][1], signs[j][1], cards[i][2], signs[j][2], cards[i][3] ]
-            exp = "".join(exp_list)       # 把列表合并为字符串
-            # print(i, j, exp)
+def find_solution(cards, opers):
+    for i in range(24):                     # 数字有24中组合
+        for j in range(64):                 # 运算符有64种组合
+            exp_list = [cards[i][0], opers[j][0], cards[i][1], opers[j][1], cards[i][2], opers[j][2], cards[i][3] ]               # 交叉拼接数字和符号
+            exp = "".join(exp_list)         # 转换为一个字符串
             if abs(eval(exp)-24) < 0.000001 :
                 print("Found a solution: ", exp)
                 print()
                 return 1
             else:
-                # exp_list = ["8","/","3","-","8","/","3"]
                 for k in range(6):
                     exp_list_pare = add_pare(exp_list,k)
                     exp_pare = "".join(exp_list_pare)
-                    # print(exp_pare)
                     try: result = eval(exp_pare)    
                     except ZeroDivisionError: continue      
                     if abs(result-24) < 0.000001:
@@ -70,7 +67,7 @@ while True:                                 # 无线循环
     opers = list(product(["+","-","*","/"], repeat=3))
     if find_solution(cards, opers) == 0:
         print("There is no solution.\n")
-    cmd = input("按回车键继续游戏，或‘q’退出...")
+    cmd = input("按回车键继续游戏（或‘q’退出）...")
     if cmd.lower() == 'q': 
         print("游戏已结束。")
         break

@@ -12,10 +12,10 @@ def find_solution(cards, signs):
             # print(i, j, exp)
             if abs(eval(exp)-24) < 0.000001 :
                 print("Found a solution: ", exp)
+                print()
                 return 1
-            '''    
             else:
-                exp_list = ["8","/","3","-","8","/","3"]
+                # exp_list = ["8","/","3","-","8","/","3"]
                 for k in range(6):
                     exp_list_pare = add_pare(exp_list,k)
                     exp_pare = "".join(exp_list_pare)
@@ -24,8 +24,8 @@ def find_solution(cards, signs):
                     except ZeroDivisionError: continue      
                     if abs(result-24) < 0.000001:
                         print("Found a solution: ", exp_pare)
+                        print()
                         return 1
-            '''
     return 0
 
 # 定义给表达式加括号的子程序
@@ -59,13 +59,18 @@ def add_pare(exp_list, n):
         return temp_list
     
 # 主程序
-cards_all = [i for i in range(1,11) for j in range(16 if i==1 else 4)]
-shuffle(cards_all)                                  # 洗牌
-cards_four = [str(cards_all[i]) for i in range(4)]  # 发四张牌
-cards_four = ["8", "8", "3", "3"]
-print(cards_four)
-cards = list(permutations(cards_four,4))
-signs = list(product(["+","-","*","/"],repeat=3))
-
-if find_solution(cards, signs) == 0:
-    print("There is no solution.")
+all = [i for i in range(1,11) for j in range(16 if i==1 else 4)]
+while True:                                 # 无线循环
+    shuffle(all)                            # 洗牌
+    four = [str(all[i]) for i in range(4)]  # 发四张牌
+    # cards_four = ["8", "8", "3", "3"]     # 指定4张牌用于测试
+    print("四张牌是：", four)
+    input("请思考并计算，按回车键看小蟒的答案...")
+    cards = list(permutations(four,4))      # 4张牌全部排列组合
+    opers = list(product(["+","-","*","/"], repeat=3))
+    if find_solution(cards, opers) == 0:
+        print("There is no solution.\n")
+    cmd = input("按回车键继续游戏，或‘q’退出...")
+    if cmd.lower() == 'q': 
+        print("游戏已结束。")
+        break

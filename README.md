@@ -34,4 +34,4 @@
 
 如果你想有更好的阅读体验，以及得到最新文章的提示，请扫描下面的二维码并关注相应的微信公众号或知乎专栏：
 
-![](./img/QRcode_Wechat.jpg)——————————————————                 ![](./img/QRcode_Zhihu.jpg)
+![趣味数学Python通](./img/QRcode_Wechat.jpg)趣味数学Python通公众号____________                 ![](./img/QRcode_Zhihu.jpg)

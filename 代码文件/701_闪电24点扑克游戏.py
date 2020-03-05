@@ -60,7 +60,7 @@ def add_pare(sequence, n):
     
 # 主程序，循环运行直到用户要求退出
 all = [i for i in range(1,11) for j in range(16 if i==1 else 4)]
-while True:                                 # 无线循环
+while True:                                 # 无限循环
     shuffle(all)                            # 洗牌
     deal = [str(all[i]) for i in range(4)]  # 发四张牌
     # deal = ["6", "5", "1", "4"]           # 指定4张牌用于测试

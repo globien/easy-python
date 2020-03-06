@@ -23,5 +23,10 @@ while guess != emotion:
     guess = int(input("请重新输入你的猜测："))
     n = n + 1
     
-if n < 5: print("恭喜你", n, "次就猜对了！智商杠杠的！")
-else: print("恭喜你终于猜对了，你猜了", n, "次。")
+if n < 5: 
+    print("恭喜你", n, "次就猜对了！智商杠杠的！")
+else: 
+    print("恭喜你终于猜对了，你猜了", n, "次。")
+    
+    
+# 详述文件地址：https://github.com/globien/easy-python/blob/master/描述文件/110_不那么枯燥的猜数游戏.md

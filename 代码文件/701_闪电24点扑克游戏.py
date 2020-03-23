@@ -47,7 +47,7 @@ def add_pare(sequence, n):
         temp.insert(0,'(')
         temp.insert(6,')')
         return temp
-    elif n == 4:                   # a ° (b ° c ° )
+    elif n == 4:                   # a ° (b ° c ° d)
         temp.insert(2,'(')
         temp.append(')')
         return temp

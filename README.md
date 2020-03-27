@@ -34,4 +34,4 @@
 
 如果你想有更好的阅读体验，以及得到最新文章的提示，请扫描下面的二维码并关注相应的微信公众号或知乎专栏。本Project中的描述文件若有少量语句语法错误，这里将不再更新，只有知乎专栏上的文章时保持更新的。谢谢！
 
-![科学松鼠Py](./img/QRcode_Wechat.jpg)科学松鼠Py公众号 | | | [简单又好玩的Python专栏](https://zhuanlan.zhihu.com/easy-fun-python)![简单又好玩的Python专栏](./img/QRcode_Zhihu.jpg)
+![科学松鼠Py](./img/QRcode_Wechat.jpg)科学松鼠Py微信公众号 | | | [简单又好玩的Python专栏](https://zhuanlan.zhihu.com/easy-fun-python)![简单又好玩的Python专栏](./img/QRcode_Zhihu.jpg)

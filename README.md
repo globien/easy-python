@@ -13,8 +13,6 @@
 
 #### 使用说明
 
-代码文件与描述文件是一一对应的，建议先阅读描述文件。
-
 无需安装编程平台，建议把代码Copy到在线编程平台直接运行，例如: 
 
 * https://www.programiz.com/python-programming/online-compiler  （首选推荐）

@@ -1,3 +1,7 @@
+# https://github.com/globien/easy-python
+# https://gitee.com/globien/easy-python
+# 多项式曲线拟合
+
 import numpy as np
 from matplotlib import pyplot as plt
 

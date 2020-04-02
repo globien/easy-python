@@ -1,3 +1,5 @@
+# https://github.com/globien/easy-python
+# https://gitee.com/globien/easy-python
 # 闪电24点扑克游戏
 # 暴力测试 24 x 64 x 7 = 10752 种排列组合（包括大量等效重复的）
 # 随机发牌，对4张牌找到一种排列组合即算成功。重复游戏直到用户指示退出。

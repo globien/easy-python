@@ -1,3 +1,5 @@
+# https://github.com/globien/easy-python
+# https://gitee.com/globien/easy-python
 # 暴力验证哥德巴赫猜想：任何一个大偶数都可以表示为两个素数之和
 # 普通家用计算机上大约可以验证到10000000000000（13个零）的大偶数
 

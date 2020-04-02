@@ -1,3 +1,5 @@
+# https://github.com/globien/easy-python
+# https://gitee.com/globien/easy-python
 # Python巨蟒超级计算器 (version 1.0 beta)
 # 可以做超级大的整数运算，例如计算10000的阶乘或365的10000次方毫无压力，如果你真的需要这样做的话
 
@@ -31,6 +33,3 @@ while 1:                    # 反复运行直到用户明确指示退出
     else:
         print("=", x)
         print()
-
-
-# 详述文件：https://github.com/globien/easy-python/blob/master/描述文件/108_巨蟒超级计算器.md

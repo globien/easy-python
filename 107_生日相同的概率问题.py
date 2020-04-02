@@ -1,3 +1,5 @@
+# https://github.com/globien/easy-python
+# https://gitee.com/globien/easy-python
 # 分别通过理论计算和随机实验来验证一个班上有相同生日的概率问题
 # 理论公式：Pn = 1 - 365!/(365^n * (365-n)!)
 
@@ -22,6 +24,3 @@ for i in range(EXP_NUM):
         counter = counter + 1                   # 累计重复次数
     birthdays = []                              # 重置生日表
 print("实验值 =", counter/EXP_NUM)
-
-
-# 详述文件：https://github.com/globien/easy-python/blob/master/描述文件/107_生日相同的概率问题.md

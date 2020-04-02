@@ -1,3 +1,5 @@
+# https://github.com/globien/easy-python
+# https://gitee.com/globien/easy-python
 # 验证三门问题（Monty Hall problem）
 
 import random
@@ -34,5 +36,3 @@ for i in range(试验次数):               # 换的实验
 
 print("不换的获奖概率：", 获奖次数_不换/试验次数)
 print("换的获奖概率：  ", 获奖次数_换/试验次数)
-
-# 详述文件：https://github.com/globien/easy-python/blob/master/描述文件/103_三门问题的验证.md

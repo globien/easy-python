@@ -1,6 +1,6 @@
 import turtle
 from math import *
-from B02 import *
+from B02a_最大公约数最小公倍数 import *
 
 r = 25
 R = 120

@@ -8,7 +8,7 @@
 
 每个程序都是独立的，Copy-Paste即可使用。
 
-大部分文件有对应的解说（科普文章），位于知乎专栏[简单又好玩的Python](https://zhuanlan.zhihu.com/easy-fun-python)或微信公众号“科学松鼠Py”，请点击连接或扫码关注：
+大部分文件有对应的解说，系科普文章，不光是针对代码的说明，更重要的是对数学或科学知识的描述，位于知乎专栏“简单又好玩的Python”请[点击链接](https://zhuanlan.zhihu.com/easy-fun-python)查看，亦位于微信公众号“科学松鼠Py”，可扫码关注：
 
 <div align=center><img width = '150' height ='150' src ="./img/QRcode_Wechat.jpg"/></div>
 
@@ -32,9 +32,3 @@
 1.  Fork 本仓库
 2.  提交代码
 3.  新建 Pull Request
-
-#### 相关公众号
-
-如果你想有更好的阅读体验，以及得到最新文章的提示，请扫描下面的二维码并关注相应的微信公众号或知乎专栏。本Project中的描述文件若有少量语句语法错误，这里将不再更新，只有知乎专栏上的文章时保持更新的。谢谢！
-
-科学松鼠Py微信公众号 | | | [简单又好玩的Python专栏](./img/QRcode_Zhihu.jpg)

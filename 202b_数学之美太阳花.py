@@ -1,6 +1,6 @@
 import turtle
 from math import *
-from 202a_最大公约数最大公倍数 import *
+from B02 import *
 
 r = 25
 R = 120

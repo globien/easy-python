@@ -10,7 +10,7 @@
 
 大部分文件有对应的解说（科普文章），位于知乎专栏[简单又好玩的Python](https://zhuanlan.zhihu.com/easy-fun-python)或微信公众号“科学松鼠Py”，请点击连接或扫码关注：
 
-<img width = '150' height ='150' src ="./img/QRcode_Wechat.jpg"/>
+<div align=center><img width = '150' height ='150' src ="./img/QRcode_Wechat.jpg"/></div>
 
 #### 安装教程
 

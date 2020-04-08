@@ -8,7 +8,7 @@
 
 每个程序都是独立的，Copy-Paste即可使用。
 
-大部分文件有对应的解说，系科普文章，不光是针对代码的说明，更重要的是对数学或科学知识的描述，位于知乎专栏“简单又好玩的Python”请[点击链接](https://zhuanlan.zhihu.com/easy-fun-python)查看，亦位于微信公众号“科学松鼠Py”，可扫码关注：
+大部分文件有对应的解说，系科普文章，不光是针对代码的说明，更重要的是对数学或科学知识的描述。这些内容位于知乎专栏“简单又好玩的Python”，请[点击链接](https://zhuanlan.zhihu.com/easy-fun-python)查看，亦位于微信公众号“科学松鼠Py”，可扫码关注：
 
 <div align=center><img width = '150' height ='150' src ="./img/QRcode_Wechat.jpg"/></div>
 

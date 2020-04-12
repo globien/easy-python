@@ -1,6 +1,6 @@
 import turtle
 from math import *
-from B02_mymath import *
+from mylib.mymath import *
 
 r = 25
 R = 120

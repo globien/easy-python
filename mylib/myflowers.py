@@ -1,6 +1,26 @@
 from math import *
 from mylib.mymath import *              # 导入自定义的数学函数库
 
+# 自定义太阳花函数
+def sunflower(tt, color = 'orange'):
+    r = 25
+    R = 120
+    d = 50
+    tt.penup()
+    tt.color(color)
+    tt.pensize("2")
+    tt.begin_fill()
+    theta = 0
+    while theta <= 2 * pi * least_common_multiple(r, R)/R + 0.01:  # 多画0.01弧度避免有缺陷
+        x = (R-r) * cos(theta) + d * cos((R - r) / r * theta)
+        y = (R-r) * sin(theta) - d * sin((R - r) / r * theta)
+        tt.goto(x, y)
+        tt.pendown()
+        theta += pi/100
+    tt.end_fill()
+
+
+
 # 自定义樱花函数
 def sakura(tt, size = 3, x0 = 0, y0 = 0, angle = 0, color ='#EBD6D9', speed = 'fastest'):
 
@@ -43,10 +63,12 @@ def sakura(tt, size = 3, x0 = 0, y0 = 0, angle = 0, color ='#EBD6D9', speed = 'f
 
 if __name__ == '__main__':                          # 测试用，仅在本文件为主程序时，才会执行下面的代码
     import turtle
+    tt = turtle.Turtle()
+    sunflower(tt,'orange')
+
     win = turtle.Screen()
     win.bgcolor('#8A5370')
-    tt = turtle.Turtle()
     sakura(tt, 3, 0, 0, 0, "pink", 'fastest')
+
     tt.hideturtle()
     turtle.done()
-

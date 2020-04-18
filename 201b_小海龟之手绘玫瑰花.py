@@ -1,11 +1,14 @@
 import turtle
 
+
 # 设置初始位置
 turtle.penup()
 turtle.left(90)
 turtle.fd(200)
 turtle.pendown()
 turtle.right(90)
+
+input( )
 
 # 花蕊
 turtle.fillcolor("red")
@@ -89,4 +92,8 @@ turtle.right(90)
 turtle.circle(200, 60)
 
 turtle.hideturtle()
+
+turtle.penup()
+turtle.goto(-250,-50)
+turtle.write('Dear Ellen，\nHppy Birthday!', font=("Snell Roundhand", 32, "normal"))
 turtle.done()

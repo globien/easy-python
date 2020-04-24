@@ -7,7 +7,7 @@ data = pd.DataFrame(pd.read_csv("data/daily-cases-covid-19.csv"))
 data_CHN = data.loc[data["Code"] == "CHN"]
 data_USA = data.loc[data["Code"] == "USA"]
 
-x = data_USA['Date']
+x = data_CHN['Date']
 y1 = data_CHN['Daily confirmed cases (cases)']
 y2 = data_USA['Daily confirmed cases (cases)']
 tick_spacing = 14                       # 此数据用于调节横坐标密度

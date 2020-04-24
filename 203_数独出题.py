@@ -36,18 +36,16 @@ def draw_grid(step=50):
 
 
 def get_holes(quarter_holes_num):
-    holes_seq = sample(range(1, 25), quarter_holes_num)
-    sample_holes = []
+    holes_seq = sample(range(1, 25), quarter_holes_num)      # 随机决定25个格子里（四分之一个数独盘），哪些格子将被挖掉
+    holes = []
     n = 0
     for i in range(9):
         ii = min(i, 8 - i)
         for j in range(ii + 1):
             n += 1
             if n in holes_seq:
-                sample_holes[len(sample_holes):] = [[i, j], [j, i], [8 - i, 8 - j], [8 - j, 8 - i]]
-    print(holes_seq)
-    print(sample_holes)
-    return sample_holes
+                holes[len(holes):] = [[i, j], [j, i], [8 - i, 8 - j], [8 - j, 8 - i]]   # 每次产生4个位置对称的洞，附加到holes列表后面
+    return holes
 
 
 def show_sudoku(step=50, full=False):

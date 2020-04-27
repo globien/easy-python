@@ -1,5 +1,7 @@
+# 作者：西岛闲鱼
 # https://github.com/globien/easy-python
 # https://gitee.com/globien/easy-python
+
 # 分别通过理论计算和随机实验来验证一个班上有相同生日的概率问题
 # 理论公式：Pn = 1 - 365!/(365^n * (365-n)!)
 

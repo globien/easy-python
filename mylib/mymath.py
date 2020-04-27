@@ -1,3 +1,9 @@
+# 作者：西岛闲鱼
+# https://github.com/globien/easy-python
+# https://gitee.com/globien/easy-python
+
+# 计算最大公约数和最小公倍数
+
 def greatest_common_divisor(m,n):
     while m!=n:
         if m > n :

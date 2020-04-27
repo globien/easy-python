@@ -1,6 +1,9 @@
+# 作者：西岛闲鱼
+# https://github.com/globien/easy-python
+# https://gitee.com/globien/easy-python
+
 import random
 import matplotlib.pyplot as plt
-
 
 def 成绩统计(成绩表):
     统计表 = {}                      # 以字典方式，生成一张空的统计表

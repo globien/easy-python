@@ -1,3 +1,9 @@
+# 作者：西岛闲鱼
+# https://github.com/globien/easy-python
+# https://gitee.com/globien/easy-python
+
+# 调用自定义模块里的函数画太阳花
+
 import turtle                           # 导入海龟作图函数库
 from mylib.myflowers import *           # 导入自定义的画花函数库
 

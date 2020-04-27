@@ -1,3 +1,7 @@
+# 作者：西岛闲鱼
+# https://github.com/globien/easy-python
+# https://gitee.com/globien/easy-python
+
 from random import *
 import turtle
 

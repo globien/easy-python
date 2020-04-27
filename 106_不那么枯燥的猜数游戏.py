@@ -1,5 +1,7 @@
+# 作者：西岛闲鱼
 # https://github.com/globien/easy-python
 # https://gitee.com/globien/easy-python
+
 # 不那么枯燥的猜数游戏
 
 import random

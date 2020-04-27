@@ -1,5 +1,7 @@
+# 作者：西岛闲鱼
 # https://github.com/globien/easy-python
 # https://gitee.com/globien/easy-python
+
 # 计算52张扑克牌发牌后，一手牌至少缺一门的概率有多大
 # 假定牌的编号1~13为黑桃，14~26为红桃，27~39为方块，40~52为梅花
 

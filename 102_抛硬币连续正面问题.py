@@ -1,5 +1,7 @@
+# 作者：西岛闲鱼
 # https://github.com/globien/easy-python
 # https://gitee.com/globien/easy-python
+
 # 验证抛硬币出现N次连续正面后，下一次还是正面的概率是不是50%
 
 import random

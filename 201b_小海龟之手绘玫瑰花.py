@@ -1,3 +1,7 @@
+# 原作：QiZhao，完善：HenryJ
+# https://blog.csdn.net/zaq0123/article/details/78573186
+
+
 import turtle
 
 
@@ -7,8 +11,6 @@ turtle.left(90)
 turtle.fd(200)
 turtle.pendown()
 turtle.right(90)
-
-input( )
 
 # 花蕊
 turtle.fillcolor("red")
@@ -93,7 +95,7 @@ turtle.circle(200, 60)
 
 turtle.hideturtle()
 
-turtle.penup()
+'''turtle.penup()
 turtle.goto(-250,-50)
-turtle.write('Dear Ellen，\nHppy Birthday!', font=("Snell Roundhand", 32, "normal"))
+turtle.write('Dear Betty，\nHppy Birthday!', font=("Snell Roundhand", 32, "normal"))'''
 turtle.done()

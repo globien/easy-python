@@ -1,3 +1,7 @@
+# 作者：西岛闲鱼
+# https://github.com/globien/easy-python
+# https://gitee.com/globien/easy-python
+
 import pandas as pd                 # 导入数据分析函数库
 import matplotlib.pyplot as plt     # 导入图表函数库
 import matplotlib.ticker as ticker  # 导入调整坐标表示的函数库

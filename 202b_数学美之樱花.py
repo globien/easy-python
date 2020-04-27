@@ -1,3 +1,9 @@
+# 作者：西岛闲鱼
+# https://github.com/globien/easy-python
+# https://gitee.com/globien/easy-python
+
+# 调用自定义模块里的函数画樱花，画若干朵，大小、位置、方向、颜色随机
+
 import turtle
 from random import *
 from mylib.myflowers import *                               # 导入自定义的画花的函数库

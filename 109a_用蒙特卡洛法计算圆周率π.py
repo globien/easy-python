@@ -1,5 +1,7 @@
+# 作者：西岛闲鱼
 # https://github.com/globien/easy-python
 # https://gitee.com/globien/easy-python
+
 # 用蒙特卡洛法计算圆周率，即，往一个正方形里扔豆子，计算有多少比例的豆子扔在了该正方形的内切圆中
 
 import random

@@ -1,3 +1,9 @@
+# 作者：西岛闲鱼
+# https://github.com/globien/easy-python
+# https://gitee.com/globien/easy-python
+
+# 用内轨迹曲线（hypotrochoid）作画
+
 from math import *
 from mylib.mymath import *              # 导入自定义的数学函数库
 

@@ -6,7 +6,7 @@
 
 #### 软件架构
 
-大部分程序都是独立的，Copy-Paste即可使用。个别程序会用到\mylib下面的文件，需要相应复制过去并保持相对路径。
+大部分程序都是独立的，Copy-Paste即可使用。少数程序会用到\mylib或\data下面的文件，需要相应复制过去并保持相对路径。
 
 我们为大部分程序写了科普性质的解说，不光是针对代码的说明，更重要的是对数学或科学知识的描述。这些内容位于知乎专栏“简单又好玩的Python”，请[点击链接](https://zhuanlan.zhihu.com/easy-fun-python)查看，同时也发表于微信公众号“科学松鼠Py”，可扫码关注：
 
@@ -18,7 +18,7 @@
 
 #### 使用说明
 
-无需安装编程平台，建议把代码Copy到在线编程平台直接运行，例如: 
+一阶课程（1xx开头的.py程序）无需安装编程平台，建议把代码Copy到在线编程平台直接运行，例如: 
 
 * https://www.programiz.com/python-programming/online-compiler  （首选推荐）
 * https://www.runoob.com/try/runcode.php?filename=HelloWorld&type=python3
@@ -26,6 +26,8 @@
 如果你使用自己电脑上安装的IDE，请务必保证Python版本为3.7版以上；如果不支持中文，请在文件开头加上这句话：
 
 `# coding = utf-8`
+
+二阶以上课程建议用Pycharm。
 
 #### 参与贡献
 

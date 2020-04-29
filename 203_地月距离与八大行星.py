@@ -16,25 +16,26 @@ distance_earth_moon = {'Maximum': 405700, 'Average': 385000, 'Minimum': 363000}
 
 print("Sum of all planet radius:", sum(planet_radius.values()) * 2)
 print("Maximum distance from Earth to Moon:", distance_earth_moon['Maximum'])
+ratio = 500                 # 把距离的公里数缩小为屏幕像素的比例
 
-ratio = 500
-
+# 初始化Turtle
 turtle.setup(1000, 600)
 turtle.bgcolor("black")
-
 tt = turtle.Turtle()
 tt.penup()
 tt.goto(-400, 0)
 tt.pendown()
 
+# 画地球
 tt.pensize(1)
 tt.setheading(90)
 tt.pencolor('silver')
-tt.fillcolor('blue')
+tt.fillcolor('RoyalBlue')
 tt.begin_fill()
 tt.circle(planet_radius['Earth'] / ratio)
 tt.end_fill()
 
+# 画月球
 tt.setheading(0)
 tt.pencolor('silver')
 tt.fillcolor('silver')
@@ -44,16 +45,18 @@ tt.begin_fill()
 tt.circle(moon_radius / ratio)
 tt.end_fill()
 
+# 在地球和月球之间画八大行星 —— 第一步，半圆画过去
 tt.goto(-400, 0)
 tt.pensize(2)
 tt.setheading(90)
 tt.pencolor('orange')
 direction = 1
 for planet in planet_radius:
-    tt.write(planet, font=('Arial', int(planet_radius[planet] / ratio / 2), 'normal'))
+    tt.write(planet, font=('Arial', int(planet_radius[planet] / ratio / 2), 'normal'))  # 打印行星名字
     direction *= -1
     tt.circle(planet_radius[planet] / ratio * direction, 180)
 
+# # 在地球和月球之间画八大行星 —— 第二步，半圆画回来
 planet_radius = collections.OrderedDict(reversed(list(planet_radius.items())))
 direction = direction * -1
 for planet in planet_radius:

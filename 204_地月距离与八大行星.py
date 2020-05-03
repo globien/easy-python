@@ -8,14 +8,14 @@ import turtle
 import collections
 
 # 数据来源：https://www.wolframalpha.com/input/?i=planet+radius
-planet_radius = collections.OrderedDict()
+planet_radius = collections.OrderedDict()       # 此句子是为了让字典能够排序。初学者可忽略具体意思。
 planet_radius = {'Jupiter': 69950, 'Saturn': 58300, 'Uranus': 25360, 'Neptune': 24600, 'Earth': 6371,
-                 'Venus': 6050, 'Mars': 3390, 'Mercury': 2440, 'Moon': 1737}
-moon_radius = 1737
+                 'Venus': 6050, 'Mars': 3390, 'Mercury': 2440}
 distance_earth_moon = {'Maximum': 405700, 'Average': 385000, 'Minimum': 363000}
+moon_radius = 1737
 
 print("Sum of all planet radius:", sum(planet_radius.values()) * 2)
-print("Maximum distance from Earth to Moon:", distance_earth_moon['Maximum'])
+print("Maximum Earth-Moon Surface Distance:", distance_earth_moon['Maximum']-planet_radius['Earth']-moon_radius)
 ratio = 500                 # 把距离的公里数缩小为屏幕像素的比例
 
 # 初始化Turtle

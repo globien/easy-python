@@ -51,6 +51,9 @@ def show_sudoku(step=50, full=False):
             if not full:
                 if [i, j] not in holes:
                     tt.write(str(sudoku[i][j]), font=('Arial', 24, 'normal'))
+                    print(sudoku[i][j],end='')
+                else:
+                    print('0',end='')
             else:
                 if [i, j] in holes:
                     tt.write(str(sudoku[i][j]), font=('Arial', 24, 'normal'))

@@ -2,11 +2,10 @@
 # https://github.com/globien/easy-python
 # https://gitee.com/globien/easy-python
 
-# 图形计算器（功能尚不完整，可做加减乘除）
+# 图形计算器（功能尚不完整，可做加减乘除，没有正负变换和百分号功能）
 
 
-def input_calculate(x, y):
-
+def get_inputs(x, y):
     # 把以下变量声明为全局变量，以便可以在函数内修改它们
     global operand
     global operator
@@ -35,34 +34,27 @@ def input_calculate(x, y):
         operand[operand_pt] += str(digit)
         is_result = False
     elif 57 <= x < 118 and -150 <= y < -102:    # key '='
-        temp = get_result()
-        clear_all()
-        operand[0] = str(temp)
-    elif 57 <= x < 118 and -102 <= y < -5:     # key '+' and '-'
-        temp = get_result()
-        clear_all()
-        operand[0] = str(temp)
+        operand[0] = get_result()
+    elif 57 <= x < 118 and -102 <= y < -5:      # key '+' and '-'
+        operand[0] = get_result()
         operator[0] = '+' if y<-53 else '-'
         operand_pt += 1
         operator_pt += 1
         is_result = False
     elif 57 <= x < 118 and -5 <= y < 90:        # key '*' and '/', 根据情况可能需要先做部分运算
         if operator_pt == 0:
-            operator[0] = '*' if y<42 else '/'
-            operator_pt = 1
-            operand_pt = 1
+            operator[0] = '*' if y < 42 else '/'
+            operator_pt = operand_pt = 1
         elif operator_pt == 1:
-            if operator[0] in ['*', '/']:
-                get_result()
+            if operator[0] in ['*', '/']:       # 前面是乘除号，先计算前面的结果
+                operand[0] = get_result()
                 operator[0] = '*' if y < 42 else '/'
-                operator_pt = 1
-                operand_pt = 1
-            else:
+                operator_pt = operand_pt = 1
+            else:                               # 前面是加减号，暂不做计算
                 operator[1] = '*' if y < 42 else '/'
-                operator_pt = 2
-                operand_pt = 2
-        else:
-            operand[1] = str(eval(operand[1] + operator[1] + operand[2]))
+                operator_pt = operand_pt = 2
+        else:                                    # operator_pt == 2，即按下了第三个算符，需要立即做部分运算
+            operand[1] = get_result(partial=True)
             operand[2] = ''
             operator[1] = '*' if y < 42 else '/'
             operand_pt = 2
@@ -70,39 +62,44 @@ def input_calculate(x, y):
     else:                                       # key '+/-' and '%' are not effective
         pass
 
+    # 每次按键都刷新显示最新的数字
     tt.clear()
     if operand[operand_pt] == '':
-        show_exp(operand[operand_pt-1])
+        display(operand[operand_pt - 1])        # 当前位置没有输入新的数字，只计算前面的表达式并显示，但要保留最后一个算符
     else:
-        show_exp(operand[operand_pt])
+        display(operand[operand_pt])            # 计算全部表达式并显示
 
 
-def show_exp(expression):
-    # 自定义显示结果输入和结果的函数
-    tt.write(expression, align='right', font=('Arial', 48, 'normal'))
-
-
-def get_result():
-    result = operand[0] + operator[0] + operand[1] + operator[1] + operand[2]
-    print(operand, operator)
-    if result[-1] in ['+', '-', '*', '/']:
-        result = result[:-1]
-    print(result, '= ', end='' )
-    result = eval(result)
-    print(result)
+def get_result(partial=False):
+    # 计算并返回一个表达式的结果
+    if partial:
+        exp = operand[1] + operator[1] + operand[2]
+    else:
+        exp = operand[0] + operator[0] + operand[1] + operator[1] + operand[2]
+        clear_all()
+    if exp[-1] in ['+', '-', '*', '/']:
+        exp = exp[:-1]                          # 结尾如果是一个运算符，它不参与运算
+    try:
+        result = '%g' % eval(exp)               # 根据结果大小决定是否使用科学记数法
+    except:
+        result = 'Error'
     return result
 
 
-def clear_all():
-    # 自定义全部清零的函数
+def display(number):
+    # 显示输入的数字或运算结果
+    tt.write(number, align='right', font=('Arial', 32, 'normal'))
+    if number == 'Error':
+        clear_all()
 
+
+def clear_all():
     # 把以下变量声明为全局变量，以便可以在函数内修改它们
     global operand
     global operator
     global operand_pt
     global operator_pt
     global is_result
-
     # 初始化输入数据和状态，保存最多3个数和最多2个运算符，以及各自目前的指向位置
     operand = ['0', '', '']
     operator = ['', '']
@@ -128,7 +125,7 @@ if __name__ == '__main__':
     tt.penup()
     tt.color('white')
     tt.goto(102, 90)
-    show_exp('0')
-    turtle.onscreenclick(input_calculate)
+    display('0')
+    turtle.onscreenclick(get_inputs)
 
     turtle.done()

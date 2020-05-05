@@ -7,36 +7,24 @@ import turtle
 
 
 def draw_grid(step=50):
-    # 画竖线
     x0 = -step * 4.5
     y0 = step * 4.5
+    # 画竖线
     for i in range(10):
         x = x0 + i * step
-        y = y0
         tt.penup()
-        tt.goto(x, y)
-        y = -y0
+        tt.goto(x, y0)
         tt.pendown()
-        if i % 3 == 0:
-            tt.pensize(2)
-        else:
-            tt.pensize(1)
-        tt.goto(x, y)
+        tt.pensize(2 if i%3==0 else 1)
+        tt.sety(-y0)
     # 画横线
-    x0 = -step * 4.5
-    y0 = step * 4.5
     for i in range(10):
-        x = x0
         y = y0 - i * step
         tt.penup()
-        tt.goto(x, y)
-        x = -x0
+        tt.goto(x0, y)
         tt.pendown()
-        if i % 3 == 0:
-            tt.pensize(2)
-        else:
-            tt.pensize(1)
-        tt.goto(x, y)
+        tt.pensize(2 if i % 3 == 0 else 1)
+        tt.setx(-x0)
 
 
 def get_holes(quarter_holes_num):
@@ -62,10 +50,10 @@ def show_sudoku(step=50, full=False):
             tt.goto(x, y)
             if not full:
                 if [i, j] not in holes:
-                    tt.write(str(sudoku[i][j]), font=('Arial', 24))
+                    tt.write(str(sudoku[i][j]), font=('Arial', 24, 'normal'))
             else:
                 if [i, j] in holes:
-                    tt.write(str(sudoku[i][j]), font=('Arial', 24))
+                    tt.write(str(sudoku[i][j]), font=('Arial', 24, 'normal'))
 
 
 def show_answer(x, y):
@@ -89,25 +77,24 @@ seed = [[a[1], a[2], a[7], a[0], a[4], a[6], a[3], a[5], a[8]],
         [a[8], a[0], a[6], a[2], a[7], a[1], a[4], a[3], a[5]]]
 m = sample(range(0, 3), 3) + sample(range(3, 6), 3) + sample(range(6, 9), 3)
 n = sample(range(0, 3), 3) + sample(range(3, 6), 3) + sample(range(6, 9), 3)
-sudoku = [[0] * 9 for i in range(9)]  # 初始化数独矩阵
+sudoku = [[0] * 9 for i in range(9)]        # 初始化数独矩阵
 for i in range(9):
     for j in range(9):
-        sudoku[i][j] = seed[m[i]][n[j]]  # 产生数独终盘矩阵
+        sudoku[i][j] = seed[m[i]][n[j]]     # 产生数独矩阵终盘
 
 # 用Turtle画格子，以及显示上述数独盘的提示数（即挖去一些洞）
-tt = turtle.Turtle()
-tt.hideturtle()
-tt.speed(0)
 turtle.tracer(False)
+tt = turtle.Turtle()
+tt.speed(0)
 draw_grid(step=50)
-tt.penup()
 holes = get_holes(quarter_holes_num=14)
+tt.penup()
 show_sudoku()
 
 # 画出显示答案的按钮区域
 tt.goto(247, -268)
 tt.color('FireBrick')
-tt.write("点这里\n看答案", font=('Arial', 16))
+tt.write("点这里\n看答案", font=('Arial', 16, 'normal'))
 tt.goto(270, -280)
 tt.pendown()
 tt.circle(30)

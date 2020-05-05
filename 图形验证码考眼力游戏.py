@@ -1,6 +1,7 @@
 import turtle
 from random import *
 
+
 def draw_keys():
     poly_num = randint(3, 6)
     points = [[randint(1,5)*15, randint(2,17)*10] for j in range(poly_num)]
@@ -50,6 +51,7 @@ def draw_turtle():
     tt.shape('turtle')
     tt.resizemode('user')
     tt.shapesize(3, 3)
+
 
 def draw_button(word, x0, y0):
     tt.color('red')

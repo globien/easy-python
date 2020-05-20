@@ -5,7 +5,7 @@
 # 图形计算器（功能尚不完整，可做加减乘除，没有正负变换和百分号功能）
 
 
-def get_inputs(x, y):
+def get_input(x, y):
     # 把以下变量声明为全局变量，以便可以在函数内修改它们
     global operand
     global operator
@@ -126,6 +126,6 @@ if __name__ == '__main__':
     tt.color('white')
     tt.goto(102, 90)
     display('0')
-    turtle.onscreenclick(get_inputs)
+    turtle.onscreenclick(get_input)
 
     turtle.done()

@@ -1,26 +1,25 @@
-from random import randint
+from random import randrange
 import matplotlib.pyplot as plt
 
-days = 300                  # 总共投资多少天
+days = 200                  # 总共投资多少天
 cash = 1.0                  # 初始现金
 
-print("\n多次实验，每次实验最终（第300天）的股价与总资产对比：\n")
+print("\n多次实验，每次实验的最终股价与总资产的对比：\n")
 for i in range(20):
     money = value = cash / 2    # 一半买为股票，一般保留现金
     price = 1.0                 # 初始股票价格
     shares = value / price      # 初始买的股票数，假定允许买卖分数股数
 
-    moneys = [money]
-    values = [value]
-    prices = [price]
-    assets = [money + value]
-
+    moneys = [money]            # 数组，用来存放每天的现金额
+    values = [value]            # 数组，用来存放每天的股票市值
+    prices = [price]            # 数组，用来存放每天的股票价格
+    assets = [money + value]    # 数组，用来存放每天的总资产
 
     for day in range(1, days):
-        price = price * 2**(randint(0,1)*2-1)
+        price = price * 2**randrange(-1, 2, 2)    # 随机决定上涨一倍还是下跌一半
         prices.append(price)
-        temp_value = shares * price
-        delta = (temp_value - money) / price / 2  # 准备卖出（或买入）股值与现金差值的一半对应股票，以保持股值与现金相等
+        val_tmp = shares * price
+        delta = (val_tmp - money) / price / 2   # 卖出/买入股值与现金的差值一半对应的股票，保持股值与现金相等
         shares = shares - delta
         value = shares * price
         values.append(value)
@@ -29,11 +28,7 @@ for i in range(20):
         assets.append(money + value)
     print("第{:2d}次实验结果： Price = {:.2e}   Assets = {:.2e}".format(i+1, prices[days-1],assets[days-1]))
 
-print()
-print()
-for day in range(days):
-    print("day {}   Price = {:.2e}   Assets = {:.2e} ".format(day+1, prices[day], assets[day]))
-
+# 把最后一次实验数据用走势图展示出来
 plt.plot(range(days), prices, label='Stock Price')
 plt.plot(range(days), assets, label='Total Assets')
 plt.xlabel('Days', )

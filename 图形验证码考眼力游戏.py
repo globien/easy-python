@@ -75,7 +75,7 @@ if __name__ == '__main__':
     tt = turtle.Turtle()
     tt.penup()
     tt.goto(0,270)
-    tt.write("此处有两个形状完全相同的图形(颜色和方向可能不同)，请把海龟拉到其中一个上后确认", align='center', font=('Arial', 16, 'normal'))
+    tt.write("此处有两个形状完全相同的图形(颜色和方向可能不同)，请把海龟拉到其中一个上后点确认。", align='center', font=('Arial', 15, 'normal'))
     color_table = ['red','orange','brown','green','blue','purple','silver','gold']
     x_min, x_max, y_min, y_max = -170, 180, -170, 180             # 限定图形出现的范围
 

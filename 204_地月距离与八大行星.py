@@ -7,14 +7,14 @@
 import turtle
 
 # 数据来源：https://www.wolframalpha.com/input/?i=planet+radius
-planet_radius = {'Jupiter': 69950, 'Saturn': 58300, 'Uranus': 25360, 'Neptune': 24600, 'Earth': 6371,
-                 'Venus': 6050, 'Mars': 3390, 'Mercury': 2440}
+planet_radius = {'Jupiter': 69950, 'Saturn': 58300, 'Uranus': 25360, 'Neptune': 24600, 'Earth': 6371, 'Venus': 6050, 'Mars': 3390, 'Mercury': 2440}
 distance_earth_moon = {'Maximum': 405700, 'Average': 385000, 'Minimum': 363000}
 moon_radius = 1737
 
-print("Sum of all planet radius:", sum(planet_radius.values()) * 2)
-print("Maximum Earth-Moon Surface Distance:", distance_earth_moon['Maximum']-planet_radius['Earth']-moon_radius)
-ratio = 500                 # 把距离的公里数缩小为屏幕像素的比例
+print("八大行星直径总和：", sum(planet_radius.values()) * 2, '公里')
+print("地月表面最大距离：", distance_earth_moon['Maximum']-planet_radius['Earth']-moon_radius, '公里')
+
+ratio = 500                 # 把距离的公里数缩小为屏幕像素的比例，画图时使用
 
 # 初始化Turtle
 turtle.setup(1000, 600)

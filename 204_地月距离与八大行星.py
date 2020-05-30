@@ -5,10 +5,8 @@
 # 计算和演示地月之间能否放下八大行星
 
 import turtle
-import collections
 
 # 数据来源：https://www.wolframalpha.com/input/?i=planet+radius
-planet_radius = collections.OrderedDict()       # 此句子是为了让字典能够排序。初学者可忽略具体意思。
 planet_radius = {'Jupiter': 69950, 'Saturn': 58300, 'Uranus': 25360, 'Neptune': 24600, 'Earth': 6371,
                  'Venus': 6050, 'Mars': 3390, 'Mercury': 2440}
 distance_earth_moon = {'Maximum': 405700, 'Average': 385000, 'Minimum': 363000}
@@ -56,8 +54,8 @@ for planet in planet_radius:
     direction *= -1
     tt.circle(planet_radius[planet] / ratio * direction, 180)
 
-# # 在地球和月球之间画八大行星 —— 第二步，半圆画回来
-planet_radius = collections.OrderedDict(reversed(list(planet_radius.items())))
+# 在地球和月球之间画八大行星 —— 第二步，半圆画回来
+planet_radius = dict(sorted(planet_radius.items(), key=lambda x:x[1]))      # 按从小到大次序重新排列
 direction = direction * -1
 for planet in planet_radius:
     direction *= -1

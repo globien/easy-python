@@ -29,11 +29,11 @@ for i in range(20):
     print("第{:2d}次实验结果： Price = {:.2e}   Assets = {:.2e}".format(i+1, prices[days-1],assets[days-1]))
 
 # 把最后一次实验数据用走势图展示出来
-plt.plot(range(days), prices, label='Stock Price')
-plt.plot(range(days), assets, label='Total Assets')
-plt.xlabel('Days', )
-plt.ylabel('Total Assets / Stock Price')
-plt.yscale('log')
-plt.legend(loc='best')
-plt.title("Earn Money with Shannon's Strategy")
-plt.show()
+plt.plot(range(days), prices, label='Stock Price')      # 对价格按日期作图（折线图）
+plt.plot(range(days), assets, label='Total Assets')     # 对资产按日期作图（折线图）
+plt.xlabel('Days', )                                    # 横坐标名称
+plt.ylabel('Total Assets / Stock Price')                # 纵坐标名称
+plt.yscale('log')                                       # 纵坐标为对数坐标
+plt.legend(loc='best')                                  # 自动选择最佳图例位置
+plt.title("Earn Money with Shannon's Strategy")         # 图表名称
+plt.show()                                              # 显示图形

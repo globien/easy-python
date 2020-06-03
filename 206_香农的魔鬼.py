@@ -31,7 +31,7 @@ for i in range(20):
 # 把最后一次实验数据用走势图展示出来
 plt.plot(range(days), prices, label='Stock Price')      # 对价格按日期作图（折线图）
 plt.plot(range(days), assets, label='Total Assets')     # 对资产按日期作图（折线图）
-plt.xlabel('Days', )                                    # 横坐标名称
+plt.xlabel('Days')                                      # 横坐标名称
 plt.ylabel('Total Assets / Stock Price')                # 纵坐标名称
 plt.yscale('log')                                       # 纵坐标为对数坐标
 plt.legend(loc='best')                                  # 自动选择最佳图例位置

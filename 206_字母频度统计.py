@@ -10,8 +10,8 @@ row = (('q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'),
        ('z', 'x', 'c', 'v', 'b', 'n', 'm', ',', '.', '?'))
 
 # 肖尔斯键盘
-'''row = (('q', 'w', 'e', '.', 't', 'y', 'i', 'u', 'o', 'p')
-       ('z', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm')
+'''row = (('q', 'w', 'e', '.', 't', 'y', 'i', 'u', 'o', 'p'),
+       ('z', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm'),
        ('a', 'x', '&', 'c', 'v', 'b', 'n', '?', ';', 'r'))'''
 
 stats = [{ch: 0 for ch in row[i]} for i in range(3)]    # 初始化第一排每个字母的计数为0
@@ -30,7 +30,6 @@ f.close()
 
 for i in range(3):
     plt.bar(stats[i].keys(), stats[i].values())
-plt.title('键盘字母频度统计', fontdict = {'fontsize': 18})
-plt.xlabel('字母/键位', fontdict = {'fontsize': 12})
-plt.ylabel('字母/键位出现次数', fontdict = {'fontsize': 12})
+plt.xlabel('字母/符号', fontdict = {'fontsize': 12})
+plt.ylabel('字母/符号出现次数', fontdict = {'fontsize': 12})
 plt.show()

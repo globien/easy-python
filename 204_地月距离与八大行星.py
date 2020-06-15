@@ -5,6 +5,9 @@
 # 计算和演示地月之间能否放下八大行星
 
 import turtle
+from collections import *
+planet_raduis = OrderedDict()
+
 
 # 数据来源：https://www.wolframalpha.com/input/?i=planet+radius
 planet_radius = {'Jupiter': 69950, 'Saturn': 58300, 'Uranus': 25360, 'Neptune': 24600, 'Earth': 6371, 'Venus': 6050, 'Mars': 3390, 'Mercury': 2440}
@@ -48,6 +51,8 @@ tt.goto(-400, 0)
 tt.pensize(2)
 tt.setheading(90)
 tt.pencolor('orange')
+planet_radius = dict(sorted(planet_radius.items(), key=lambda x:x[1], reverse=True))    # 按从大到小次排序
+print(type(planet_raduis))
 direction = 1
 for planet in planet_radius:
     tt.write(planet, font=('Arial', int(planet_radius[planet] / ratio / 2), 'normal'))  # 打印行星名字

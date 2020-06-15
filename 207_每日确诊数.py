@@ -21,13 +21,14 @@ y2 = data2['Daily confirmed cases (cases)']     # 拷贝每日确诊数作为纵
 
 # 创建画布和一个图表，大小为 12.8 x 4.8
 fig, ax = plt.subplots(figsize = [12.8, 4.8])
-ax.bar(x1, y1)  # 准备画第一组数据，以柱状图展示
-ax.bar(x2, y2)  # 准备画第二组数据，以柱状图展示
+ax.bar(x1, y1, label=code1)  # 准备画第一组数据，以柱状图展示
+ax.bar(x2, y2, label=code2)  # 准备画第二组数据，以柱状图展示
 plt.xlabel('Date')
 plt.ylabel('Daily Confirmed Cases')
+plt.legend(loc='upper left')
 
-# 调节横坐标刻度，tick_spacing = 14 表示每过14天标一个横坐标标签
-tick_spacing = 14
+# 调节横坐标刻度，例如tick_spacing = 21 表示每过14天标一个横坐标标签
+tick_spacing = 20
 ax.xaxis.set_major_locator(ticker.MultipleLocator(tick_spacing))
 
 # 正式作图

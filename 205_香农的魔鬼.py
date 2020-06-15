@@ -7,7 +7,7 @@ trial = 20
 
 print("\n多次实验，每次实验的最终股价与总资产的对比：\n")
 for i in range(trial):
-    money = value = cash / 2    # 一半买为股票，一般保留现金
+    money = value = cash / 2    # 一半买为股票，一半保留现金
     price = 1.0                 # 初始股票价格
     shares = value / price      # 初始买的股票数，假定允许买卖分数股数
 

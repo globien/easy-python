@@ -7,24 +7,19 @@
 import numpy as np
 from matplotlib import pyplot as plt
 
-# number of cases in order of dates
-num_cases = [115, 142, 198, 235, 343, 436, 596, 727, 873, 1087, 1330, 1470, 2091, 2792]
 
-days = len(num_cases)                  # count the days input with the number of cases
-x = [ i+1 for i in range(days) ]       # x coordinate, in days
-y = num_cases                          # y coordinate, i.e., number of cases for each day
-plt.scatter(x, y)                      # print the original numbers in dots
-
-# simulate with polynomial of degree 3
-parameters = np.polyfit(x, y, 3)
+x = [20, 40, 60, 80, 100, 120, 140]
+y = [44.50, 75.65, 103.05, 138.35, 168.20, 187.30, 210.85]
+parameters = np.polyfit(x, y, 1)
 func = np.poly1d(parameters)
+print(parameters)
 
-# extend for more days and draw the curve
-days_extend = 14                          
-for i in range(days_extend):
-  x.append(days+i+1)
-plt.plot(x, func(x), color='g')
-plt.xlabel('days')
-plt.ylabel('number of cases')
-plt.title('A Rough Prediction of the Number of Cases by Simulation')
+plt.scatter(x, y)                      # print the original numbers in dots
+x = [0] + x + [160]
+plt.grid(True, color='gray')
+plt.plot(x, func(x), color='orange', linestyle = '--')
+plt.xlim(0, 160)
+plt.ylim(0, 300)
+plt.xlabel('W (Kg)')
+plt.ylabel('F (N)')
 plt.show()

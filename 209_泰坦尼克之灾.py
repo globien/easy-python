@@ -1,7 +1,7 @@
 # -*-coding:utf-8 -*-
 
 """
-# File       : 泰坦尼克之灾.py
+# File       : 209_泰坦尼克之灾.py
 # Time       ：2020/6/30 下午4:12
 # Author     ：Dr. Xianyu
 # version    ：python 3.8
@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 
 
 def add_random(x):
-    return x # + random.random() / 3
+    return x + random.random() / 3
 
 
 data_train = pd.read_csv('data/titanic-data-train.csv')
@@ -34,7 +34,7 @@ panel = panel.dropna()
 print(panel.head())
 
 sm = scatter_matrix(panel, figsize=(12, 7))
-# plt.show()
+plt.show()
 
 corr_array = panel.corr()['Survived']
 print(corr_array)

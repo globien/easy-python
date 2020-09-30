@@ -1,9 +1,11 @@
 import random
 import matplotlib.pyplot as plt
 
-days = 200                  # 总共投资多少天
+trial = 20                  # 模拟实验次数
+amp = 2.0                   # 上下振幅（对称乘除）
+
 cash = 1.0                  # 初始现金
-trial = 20
+days = 200                  # 每次模拟实验观察天数
 
 print("\n多次实验，每次实验的最终股价与总资产的对比：\n")
 for i in range(trial):
@@ -17,7 +19,7 @@ for i in range(trial):
     assets = [money + value]    # 数组，用来存放每天的总资产
 
     for day in range(1, days):
-        price = price * 1.3**random.choice([-1,1])    # 随机决定上涨一倍还是下跌一半
+        price = price * amp**random.choice([-1,1])    # 随机决定上涨还是下跌
         prices.append(price)
         val_tmp = shares * price
         delta = (val_tmp - money) / price / 2   # 卖出/买入股值与现金的差值一半对应的股票，保持股值与现金相等

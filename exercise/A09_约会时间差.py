@@ -13,7 +13,7 @@ import random
 trial = 100000
 total = 0
 for i in range(trial):
-    A, B = random.random(), random.random()
+    A, B = random.random() * 60, random.random() * 60
     total += abs(A-B)
 average = total/trial
 print(average)

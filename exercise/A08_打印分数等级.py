@@ -10,5 +10,6 @@ while True:
         else:
             print('Not in the range of 0~100. Try again.')
 
-level = ['不及格', '及格', '中等', '良好', '优秀']
-print(level[min(4, max(0, (score-60)//10+1))])  # 分数-等级转换，可以用if-elif-else结构代替
+levels = ['不及格', '及格', '中等', '良好', '优秀']
+level = min(4, max(0, int((score - 60) // 10 + 1)))  # 分数-等级转换，可以用if-elif-else结构代替
+print(levels[level])

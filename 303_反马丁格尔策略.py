@@ -1,7 +1,7 @@
 # -*-coding:utf-8 -*-
 
 """
-# File       : 302_反马丁格尔策略.py
+# File       : 303_反马丁格尔策略.py
 # Time       ：2020/8/10 下午3:01
 # Author     ：Dr. Xianyu
 # version    ：python 3.8

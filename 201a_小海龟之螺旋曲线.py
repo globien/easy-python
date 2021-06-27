@@ -5,8 +5,11 @@
 
 import turtle
 turtle.bgcolor('whitesmoke')
+leo = turtle.Turtle()
+leo.color('red')
+leo.shape('turtle')
 for length in range(5, 5 * 31, 5):
-    turtle.right(90)
-    turtle.forward(length)
+    leo.right(90)
+    leo.forward(length)
 turtle.done()
 
